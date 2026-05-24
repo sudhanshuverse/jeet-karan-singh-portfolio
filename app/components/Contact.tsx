@@ -136,7 +136,7 @@ export default function Contact() {
                                     name="name"
                                     type="text"
                                     className="w-full bg-transparent border-b border-slate-200 py-3 text-slate-900 font-serif text-xl focus:outline-none placeholder:text-slate-300 transition-colors"
-                                    placeholder="John Doe"
+                                    placeholder="Sudhanshu Kumar"
                                 />
                                 <div className="absolute bottom-0 left-0 h-[2px] bg-sky-600 w-0 group-focus-within:w-full transition-all duration-500 ease-out" />
                             </motion.div>
@@ -150,7 +150,7 @@ export default function Contact() {
                                     name="email"
                                     type="email"
                                     className="w-full bg-transparent border-b border-slate-200 py-3 text-slate-900 font-serif text-xl focus:outline-none placeholder:text-slate-300 transition-colors"
-                                    placeholder="john@example.com"
+                                    placeholder="example@.com"
                                 />
                                 <div className="absolute bottom-0 left-0 h-[2px] bg-sky-600 w-0 group-focus-within:w-full transition-all duration-500 ease-out" />
                             </motion.div>
