@@ -2,7 +2,7 @@
 
 import { motion, Variants } from "framer-motion";
 import Link from "next/link";
-import { ArrowUp, Mail, MapPin } from "lucide-react"; // Removed Linkedin from here
+import { ArrowUp, Phone, MapPin } from "lucide-react"; // Removed Linkedin from here
 
 // 1. Add the custom LinkedIn Icon right here so it matches the Lucide style perfectly
 const LinkedInIcon = ({ className }: { className?: string }) => (
@@ -103,9 +103,9 @@ export default function Footer() {
                         </h4>
                         <ul className="space-y-5 text-sm text-slate-500 font-sans font-light">
                             <li>
-                                <a href="mailto:jeetkaran.singh395@gmail.com" className="flex items-center gap-3 hover:text-sky-600 transition-colors group">
-                                    <Mail className="w-4 h-4 text-slate-400 group-hover:text-sky-600 transition-colors" />
-                                    jeetkaran.singh395@gmail.com
+                                <a href="tel:+917467848500" className="flex items-center gap-3 hover:text-sky-600 transition-colors group" >
+                                    <Phone className="w-4 h-4 text-slate-400 group-hover:text-sky-600 transition-colors" />
+                                    +91 74678 48500
                                 </a>
                             </li>
                             <li>
@@ -119,7 +119,7 @@ export default function Footer() {
                             </li>
                             <li className="pt-2">
                                 <a
-                                    href="https://linkedin.com"
+                                    href="https://www.linkedin.com/in/dr-jeet-karan-singh-10a822367?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="inline-flex items-center justify-center w-10 h-10 rounded-full border border-slate-200 text-slate-400 hover:bg-sky-600 hover:text-white hover:border-sky-600 transition-all duration-300"

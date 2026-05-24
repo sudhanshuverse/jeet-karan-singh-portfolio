@@ -22,14 +22,28 @@ const jost = Jost({
 
 // 3. Production-Grade SEO Metadata
 export const metadata: Metadata = {
-  title: "Dr. Jeet Karan Singh | Premium Medical Care",
-  description: "Experience world-class, evidence-based medical care and compassionate clinical diagnostics.",
-  keywords: ["Internal Medicine", "Doctor", "Dehradun", "MBBS", "Clinical Diagnostics", "Dr. Jeet Karan Singh"],
+  title: "Dr. Jeet Karan Singh | Internal Medicine Physician & Doctor in Dehradun",
+  description: "Dr. Jeet Karan Singh, MBBS. Expert Internal Medicine physician in Dehradun offering evidence-based clinical diagnostics, chronic disease management, and secure online medical consultations.",
+  keywords: ["Internal Medicine Doctor in Dehradun", "Best Physician in Dehradun", "Dr. Jeet Karan Singh Dehradun", "Online Doctor Consultation India", "Chronic Disease Specialist Dehradun", "Expert Physician Dehradun MBBS", "Clinical Diagnostics Dehradun", "General Medicine Doctor Dehradun"],
   authors: [{ name: "Dr. Jeet Karan Singh" }],
+  alternates: {
+    canonical: "https://drjeetsingh.com",
+  },
   openGraph: {
-    title: "Dr. Jeet Karan Singh | Clinical Excellence",
-    description: "Fusing evidence-based diagnostics with profound empathy.",
+    title: "Dr. Jeet Karan Singh | Internal Medicine Physician in Dehradun",
+    description: "Expert clinical diagnostics and compassionate patient care. Book your consultation today.",
+    url: "https://drjeetsingh.com",
+    siteName: "Dr. Jeet Karan Singh",
+    images: [
+      {
+        url: "/images/dr-jeet-karan-singh.png", // Make sure to place a 1200x630px image in your public folder
+        width: 1200,
+        height: 630,
+        alt: "Dr. Jeet Karan Singh - Internal Medicine Physician",
+      },
+    ],
     type: "website",
+    locale: "en_IN",
   },
 };
 

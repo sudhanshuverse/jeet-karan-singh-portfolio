@@ -6,6 +6,7 @@ import Experience from "./components/Experience";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Testimonials from './components/ui/Testimonials';
 
 export default function Page() {
   const doctorSchema = {
@@ -43,6 +44,7 @@ export default function Page() {
           <About />
           <Experience />
           <Skills />
+          <Testimonials />
           <Contact />
           <Footer />
         </div>

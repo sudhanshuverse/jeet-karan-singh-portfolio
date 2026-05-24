@@ -3,6 +3,7 @@
 import { motion, Variants } from 'framer-motion';
 import Link from 'next/link';
 import { Stethoscope, ShieldCheck, HeartPulse, ArrowRight, Activity } from 'lucide-react';
+import BookingButton from './ui/BookingButton';
 
 export default function Hero() {
     // Smooth stagger animation variants with explicit TypeScript typing
@@ -69,13 +70,9 @@ export default function Hero() {
                         </motion.div>
 
                         <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-5">
-                            <Link
-                                href="/#contact"
-                                className="group flex items-center justify-center gap-3 px-8 py-4 bg-slate-900 text-white font-sans text-sm tracking-widest uppercase hover:bg-sky-600 hover:shadow-lg hover:shadow-sky-600/20 transition-all duration-500 rounded-sm"
-                            >
-                                Book Consultation
-                                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                            </Link>
+                            {/* This triggers your Calendly popup */}
+                            <BookingButton text="Book Consultation" />
+
                             <Link
                                 href="/#about"
                                 className="flex items-center justify-center px-8 py-4 border border-slate-200 text-slate-900 font-sans text-sm tracking-widest uppercase hover:border-sky-600 hover:text-sky-600 transition-colors duration-500 rounded-sm"
@@ -95,7 +92,7 @@ export default function Hero() {
                         {/* Main Portrait Image Placeholder */}
                         <div className="absolute inset-0 rounded-2xl overflow-hidden bg-zinc-200 shadow-xl">
                             <img
-                                src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?q=80&w=1600&auto=format&fit=crop"
+                                src="./images/dr-jeet-karan-singh.png"
                                 alt="Dr. Jeet Karan Singh"
                                 className="w-full h-full object-cover object-center grayscale hover:grayscale-0 transition-all duration-1000"
                             />
