@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import { Mail, Phone, MapPin, Send, ArrowUpRight } from "lucide-react";
 
 export default function Contact() {
@@ -13,11 +13,18 @@ export default function Contact() {
         }
     };
 
-    const itemVariants = {
+    const itemVariants: Variants = {
         hidden: { opacity: 0, y: 20 },
-        visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
+        visible: {
+            opacity: 1,
+            y: 0,
+            transition: {
+                duration: 0.5,
+                ease: "easeInOut" as const, // The "as const" helps TypeScript recognize the specific easing string
+            },
+        },
     };
-
+    
     return (
         <section id="contact" className="py-24 md:py-32 px-6 md:px-8 bg-[#FAFAFA] relative z-10 border-t border-slate-200">
 
